@@ -1,0 +1,8 @@
+Cadena servidor remoto
+"Data Source=169.254.213.229\SQLEXPRESS;Initial Catalog=BASES2;Integrated Security=False;User Id=sa; password=sa;"
+
+Cadena server local con autenticacion de windows.
+"Data Source=.;Initial Catalog=BASES2;Integrated Security=True"
+
+Cadena server local con autenticacion de usuario.
+"Data Source=CINOTERPC\\SQLEXPRESS;Initial Catalog=prototipo1;Persist Security Info=True;User ID=sa;  Password = 123;"

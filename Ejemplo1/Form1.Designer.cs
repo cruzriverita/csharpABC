@@ -100,7 +100,7 @@
             this.tabPage12 = new System.Windows.Forms.TabPage();
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
+            this.btnBorrar = new System.Windows.Forms.Button();
             this.textBox23 = new System.Windows.Forms.TextBox();
             this.textBox24 = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
@@ -108,6 +108,10 @@
             this.bases2DataSet = new Ejemplo1.Bases2DataSet();
             this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.clienteTableAdapter = new Ejemplo1.Bases2DataSetTableAdapters.ClienteTableAdapter();
+            this.tabPage14 = new System.Windows.Forms.TabPage();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -128,6 +132,8 @@
             this.tabPage12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bases2DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
+            this.tabPage14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -650,6 +656,7 @@
             this.tabControl4.Controls.Add(this.tabPage10);
             this.tabControl4.Controls.Add(this.tabPage11);
             this.tabControl4.Controls.Add(this.tabPage12);
+            this.tabControl4.Controls.Add(this.tabPage14);
             this.tabControl4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl4.Location = new System.Drawing.Point(3, 3);
             this.tabControl4.Name = "tabControl4";
@@ -716,6 +723,7 @@
             // 
             // tabPage11
             // 
+            this.tabPage11.Controls.Add(this.comboBox2);
             this.tabPage11.Controls.Add(this.textBox19);
             this.tabPage11.Controls.Add(this.label19);
             this.tabPage11.Controls.Add(this.button8);
@@ -730,6 +738,7 @@
             this.tabPage11.TabIndex = 1;
             this.tabPage11.Text = "Actualizar";
             this.tabPage11.UseVisualStyleBackColor = true;
+            this.tabPage11.Enter += new System.EventHandler(this.tabPage11_Enter);
             // 
             // textBox19
             // 
@@ -756,6 +765,7 @@
             this.button8.TabIndex = 9;
             this.button8.Text = "Actualizar";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // textBox20
             // 
@@ -791,9 +801,10 @@
             // 
             // tabPage12
             // 
+            this.tabPage12.Controls.Add(this.comboBox3);
             this.tabPage12.Controls.Add(this.textBox22);
             this.tabPage12.Controls.Add(this.label22);
-            this.tabPage12.Controls.Add(this.button9);
+            this.tabPage12.Controls.Add(this.btnBorrar);
             this.tabPage12.Controls.Add(this.textBox23);
             this.tabPage12.Controls.Add(this.textBox24);
             this.tabPage12.Controls.Add(this.label23);
@@ -805,6 +816,7 @@
             this.tabPage12.TabIndex = 2;
             this.tabPage12.Text = "Eliminar";
             this.tabPage12.UseVisualStyleBackColor = true;
+            this.tabPage12.Enter += new System.EventHandler(this.tabPage12_Enter);
             // 
             // textBox22
             // 
@@ -823,14 +835,15 @@
             this.label22.TabIndex = 17;
             this.label22.Text = "Id";
             // 
-            // button9
+            // btnBorrar
             // 
-            this.button9.Location = new System.Drawing.Point(118, 174);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(230, 23);
-            this.button9.TabIndex = 16;
-            this.button9.Text = "Eliminar";
-            this.button9.UseVisualStyleBackColor = true;
+            this.btnBorrar.Location = new System.Drawing.Point(118, 174);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(230, 23);
+            this.btnBorrar.TabIndex = 16;
+            this.btnBorrar.Text = "Eliminar";
+            this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
             // textBox23
             // 
@@ -878,6 +891,44 @@
             // 
             this.clienteTableAdapter.ClearBeforeFill = true;
             // 
+            // tabPage14
+            // 
+            this.tabPage14.Controls.Add(this.dataGridView2);
+            this.tabPage14.Location = new System.Drawing.Point(4, 22);
+            this.tabPage14.Name = "tabPage14";
+            this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage14.Size = new System.Drawing.Size(688, 353);
+            this.tabPage14.TabIndex = 3;
+            this.tabPage14.Text = "READ";
+            this.tabPage14.UseVisualStyleBackColor = true;
+            this.tabPage14.Enter += new System.EventHandler(this.tabPage14_Enter);
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(32, 24);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(587, 231);
+            this.dataGridView2.TabIndex = 0;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(467, 24);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(174, 21);
+            this.comboBox2.TabIndex = 12;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(416, 23);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(199, 21);
+            this.comboBox3.TabIndex = 19;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -916,6 +967,8 @@
             this.tabPage12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bases2DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
+            this.tabPage14.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -967,7 +1020,7 @@
         private System.Windows.Forms.TabPage tabPage12;
         private System.Windows.Forms.TextBox textBox22;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btnBorrar;
         private System.Windows.Forms.TextBox textBox23;
         private System.Windows.Forms.TextBox textBox24;
         private System.Windows.Forms.Label label23;
@@ -1001,6 +1054,10 @@
         private Bases2DataSetTableAdapters.ClienteTableAdapter clienteTableAdapter;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TabPage tabPage14;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox3;
     }
 }
 

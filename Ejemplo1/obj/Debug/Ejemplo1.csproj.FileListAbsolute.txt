@@ -8,5 +8,11 @@ c:\users\robsoncruz\documents\visual studio 2013\Projects\Ejemplo1\Ejemplo1\bin\
 c:\users\robsoncruz\documents\visual studio 2013\Projects\Ejemplo1\Ejemplo1\obj\Debug\Ejemplo1.exe
 c:\users\robsoncruz\documents\visual studio 2013\Projects\Ejemplo1\Ejemplo1\obj\Debug\Ejemplo1.pdb
 C:\Users\RobsonCruz\Documents\Visual Studio 2013\Projects\Ejemplo1\csharpABC\Ejemplo1\bin\Debug\Ejemplo1.exe.config
+C:\Users\RobsonCruz\Documents\Visual Studio 2013\Projects\Ejemplo1\csharpABC\Ejemplo1\bin\Debug\Ejemplo1.exe
+C:\Users\RobsonCruz\Documents\Visual Studio 2013\Projects\Ejemplo1\csharpABC\Ejemplo1\bin\Debug\Ejemplo1.pdb
+C:\Users\RobsonCruz\Documents\Visual Studio 2013\Projects\Ejemplo1\csharpABC\Ejemplo1\obj\Debug\Ejemplo1.csprojResolveAssemblyReference.cache
+C:\Users\RobsonCruz\Documents\Visual Studio 2013\Projects\Ejemplo1\csharpABC\Ejemplo1\obj\Debug\Ejemplo1.Form1.resources
+C:\Users\RobsonCruz\Documents\Visual Studio 2013\Projects\Ejemplo1\csharpABC\Ejemplo1\obj\Debug\Ejemplo1.Properties.Resources.resources
+C:\Users\RobsonCruz\Documents\Visual Studio 2013\Projects\Ejemplo1\csharpABC\Ejemplo1\obj\Debug\Ejemplo1.csproj.GenerateResource.Cache
 C:\Users\RobsonCruz\Documents\Visual Studio 2013\Projects\Ejemplo1\csharpABC\Ejemplo1\obj\Debug\Ejemplo1.exe
 C:\Users\RobsonCruz\Documents\Visual Studio 2013\Projects\Ejemplo1\csharpABC\Ejemplo1\obj\Debug\Ejemplo1.pdb
