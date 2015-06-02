@@ -1,0 +1,64 @@
+CREATE PROCEDURE [dbo].[InsertarCliente]
+--Parametros utilizados al llamar al procedimiento
+@nombre varchar (255),
+@dpi varchar (14)
+AS
+BEGIN
+--consulta para insertar en la tabla
+insert into Cliente
+values(@nombre,@dpi)
+END
+
+
+USE [ProyectoBD2]
+GO
+/****** Object: StoredProcedure [dbo].[ActualizarCliente] Script Date: 24/04/2015 17:22:26 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER PROCEDURE [dbo].[ActualizarCliente]
+--Parametros para llamar al procedimiento
+@id Bigint,
+@nombre varchar (255),
+@dpi varchar (14)
+AS
+BEGIN
+--consulta con conducion en donde se modifica en base al dpi
+UPDATE Cliente
+SET nombre= @nombre,dpi= @dpi
+WHERE id = @id
+END
+
+USE [ProyectoBD2]
+GO
+/****** Object: StoredProcedure [dbo].[EliminarCliente] Script Date: 24/04/2015 17:24:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER PROCEDURE [dbo].[EliminarCliente]
+--Parametros
+@id Bigint
+AS
+BEGIN
+DELETE from Cliente
+WHERE id = @id
+END
+
+
+USE [ProyectoBD2]
+GO
+/****** Object: StoredProcedure [dbo].[Bitacora_filtro_general] Script Date: 24/04/2015 17:25:51 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER PROCEDURE [dbo].[Bitacora_filtro_general]
+--Parametros
+AS
+BEGIN
+SET NOCOUNT ON
+SELECT id,nombre,fecha,operacion,tabla,descripcion
+FROM Bitacora
+END
